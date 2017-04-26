@@ -1,3 +1,4 @@
+/*
 console.groupCollapsed("Minhas mensagens de erro:");
 console.log("Texto no console");
 console.error("eu sou um erro de console");
@@ -17,3 +18,4 @@ console.table([
   {nome:"Alura"},
   {nome:"Johnny"}
 ])
+*/
