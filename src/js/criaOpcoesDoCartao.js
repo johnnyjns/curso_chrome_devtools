@@ -47,6 +47,7 @@ var criaOpcoesDoCartao = (function(){
 	}
 
 	function removeCartao(){
+		var idDoCartao = this.dataset.id;
 		var cartao = document.querySelector("#cartao_" + this.dataset.id);
 		console.log(cartao);
 		cartao.classList.add("cartao--some");
@@ -77,7 +78,7 @@ var criaOpcoesDoCartao = (function(){
 
 		var botaoRemove = $("<button>").addClass("opcoesDoCartao-remove")
                                        .addClass("opcoesDoCartao-opcao")
-		                               .attr("data-id", 1)
+		                               .attr("data-id", idNovoCartao)
                                        .text("Remover")
                                        .click(removeCartao)
 
